@@ -1,4 +1,4 @@
-import MusicPlaylistClient from '../api/musicPlaylistClient';
+import ConcertMemoriesClient from '../api/concertMemoriesClient';
 import BindingClass from "../util/bindingClass";
 
 /**
@@ -8,13 +8,10 @@ export default class Header extends BindingClass {
     constructor() {
         super();
 
-        const methodsToBind = [
-            'addHeaderToPage', 'createSiteTitle', 'createUserInfoForHeader',
-            'createLoginButton', 'createLoginButton', 'createLogoutButton'
-        ];
+        const methodsToBind = ['addHeaderToPage', 'createSiteTitle', 'createUserInfoForHeader', 'createLoginButton',
+         'createLogoutButton', 'createButton']
         this.bindClassMethods(methodsToBind, this);
-
-        this.client = new MusicPlaylistClient();
+        this.client = new ConcertMemoriesClient();
     }
 
     /**
@@ -32,15 +29,9 @@ export default class Header extends BindingClass {
     }
 
     createSiteTitle() {
-        const homeButton = document.createElement('a');
-        homeButton.classList.add('header_home');
-        homeButton.href = 'index.html';
-        homeButton.innerText = 'Playlists';
-
-        const siteTitle = document.createElement('div');
-        siteTitle.classList.add('site-title');
-        siteTitle.appendChild(homeButton);
-
+        const siteTitle = document.createElement('p');
+        siteTitle.innerHTML = `<pre><h1>Concert Memories</h1>
+                               <h3>Relive the Rush!</h3></pre>`;
         return siteTitle;
     }
 
@@ -78,3 +69,4 @@ export default class Header extends BindingClass {
         return button;
     }
 }
+

@@ -1,11 +1,11 @@
-package concertmemories2.api.concerts.activity;
+package concertmemories2.api.concert.activity;
 
-import com.nashss.se.concertmemories.api.concert.request.GetAllConcertsRequest;
-import com.nashss.se.concertmemories.api.concert.result.GetAllConcertsResult;
-import com.nashss.se.concertmemories.converters.ModelConverter;
-import com.nashss.se.concertmemories.dynamodb.ConcertDao;
-import com.nashss.se.concertmemories.dynamodb.models.Concert;
-import com.nashss.se.concertmemories.models.ConcertModel;
+import concertmemories2.api.concert.request.GetAllConcertsRequest;
+import concertmemories2.api.concert.result.GetAllConcertsResult;
+import concertmemories2.converters.ModelConverter;
+import concertmemories2.dynamodb.ConcertDao;
+import concertmemories2.dynamodb.models.Concert;
+import concertmemories2.models.ConcertModel;
 
 import java.util.List;
 import javax.inject.Inject;

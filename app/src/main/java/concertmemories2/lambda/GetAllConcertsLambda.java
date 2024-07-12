@@ -2,8 +2,8 @@ package concertmemories2.lambda;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-import com.nashss.se.concertmemories.api.concert.request.GetAllConcertsRequest;
-import com.nashss.se.concertmemories.api.concert.result.GetAllConcertsResult;
+import concertmemories2.api.concert.request.GetAllConcertsRequest;
+import concertmemories2.api.concert.result.GetAllConcertsResult;
 
 /**
  * GetAllConcertsLambda.

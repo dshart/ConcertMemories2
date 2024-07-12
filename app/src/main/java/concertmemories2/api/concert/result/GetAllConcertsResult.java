@@ -1,6 +1,6 @@
-package concertmemories2.api.concerts.result;
+package concertmemories2.api.concert.result;
 
-import com.nashss.se.concertmemories.models.ConcertModel;
+import concertmemories2.models.ConcertModel;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package concertmemories2.api.concerts.request;
+package concertmemories2.api.concert.request;
 
 /**
  * Implementation of GetAllConcertRequest for ConcertMemories' GetAllConcerts API.

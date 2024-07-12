@@ -1,7 +1,7 @@
 package concertmemories2.converters;
 
-import com.nashss.se.concertmemories.dynamodb.models.Concert;
-import com.nashss.se.concertmemories.models.ConcertModel;
+import concertmemories2.dynamodb.models.Concert;
+import concertmemories2.models.ConcertModel;
 
 import java.util.ArrayList;
 import java.util.List;

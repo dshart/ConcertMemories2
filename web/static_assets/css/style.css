@@ -1,137 +1,324 @@
-:root {
-    /* css variables: https://developer.mozilla.org/en-US/docs/Web/CSS/var */
-    --primary-color: #5D5E5E;
-    --secondary-color: #ffffff;
-    --tertiary-color: #F5881F;
-    --error-color: #EE3A23;
+#cut-top-margin {
+    margin-top: -60px
 }
 
-.background {
-    background-color: #8A8C8F;
-    margin: 0;
-    counter-reset: section;
-    font-family: "Helvetica Neue",Helvetica,sans-serif;
+h1 {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -50px;
+    margin-top: -10px;
 }
 
-.header {
-    /* Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 4px 20px;
-}
-
-.button {
-  background-color: var(--tertiary-color);
-  border: none;
-  color: var(--secondary-color);
-  padding: 6px 8px 4px 8px;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.button-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header_home {
-    font-size: 36px;
-    line-height: 40px;
-    height: 100px;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-.card {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    margin: 20px;
-    padding: 10px 20px;
-}
-
-.error {
-    color: var(--error-color);
-    border: 1px solid var(--error-color);
-    padding: 8px;
-}
-
-.validated-field:invalid {
-    outline: 2px solid var(--error-color);
-}
-.validated-field:focus:invalid {
-    color: var(--error-color);
-}
-
-.card-content {
-    max-width: 500px;
-}
-
-.card-content .form-field {
-    display: flex;
-    flex-direction: column;
-}
-
-.tags {
-    display: flex;
-    flex-direction: row;
-}
-
-.tag {
-    font-size: 12px;
-    margin: 0 10px;
-    padding: 4px 8px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    position: relative;
-    border-radius: 16px;
-}
-
-.song {
-    padding: 2px;
-    display: flex;
-}
-
-.song .title {
-    flex: 20%;
-}
-
-.song .album {
-    flex: 80%;
-}
-
-/*
-Flexbox on a lists removes the numbers. We use a counter here to add them back.
-https://stackoverflow.com/a/34316093
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
-*/
-.song:before {
-    counter-increment: section;
-    content: counter(section) ".";
-    position: absolute;
-    margin-left: -40px;
+h3 {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -25px;
 }
 
 .hidden {
     display: none;
 }
 
-/* table styles */ 
+.row {
+  display: flex;
+}
 
-th, td {
-    padding: 15px;
+div.center-me
+{
+    text-align: center;
+}
+
+div.textAndImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#index-text{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+   flex: 0;
+    margin: 20px;
+    //padding: 0px;*/
+    /*border: 2px solid #ccc;*/
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+#entrypagepic {
+    height : 50%;
+    width : 50%;
+}
+
+
+.links {
+    text-decoration: none;
+}
+
+.columnpic {
+  width: 85%;
+  height: 85%}
+}
+
+.form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
 }
 
-th {
-    border-bottom: 1px solid var(--primary-color);
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-a {
-    color: var(--tertiary-color);
-    text-decoration: none;
+body {
+    background-color: tan;
+    font-size: 16px;
 }
+
+.container {
+    border: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitConcertButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: block;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submitDateButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submitDateToDeleteButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#enterSiteButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#concertViewButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submitBandNameButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submitVenueButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#updateConcertButtonId {
+    background-color: #6E5658;
+    width: 125px;
+    padding: .5em 1em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.25em;
+    color: white;
+    border: none;
+    display: none;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#button-container-index {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+   border-collapse: collapse;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+th {
+    border: 5px solid black;
+}
+
+td {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+
+
+.center-photos {
+    display: block;
+    margin: auto;
+    display: flex
+    justify-content: center;
+    align-items: center;
+}
+
+.align-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container-concerts {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-top: 20px;
+}
+
+.button-container-bands {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-top: 20px;
+}
+
+.button {
+   width: 125px;
+   padding: .5em 1em;
+   font-size: 1em;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 1.25em;
+   color: white;
+   display: inline-block
+}
+
+.button-primary {
+   color: white;
+   border: none;
+   display: inline-block;
+}
+
+.button-concert-enter {
+   background-color: #6E5658;
+}
+
+.button-concert-display {
+   background-color: #6E5658;
+   margin-right: 20px;
+}
+
+.button-band-enter {
+   background-color: #6E5658;
+}
+
+.button-band-display {
+   background-color: #6E5658;
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+
+

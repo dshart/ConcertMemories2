@@ -1,7 +1,7 @@
 package concertmemories2.lambda;
 
-import com.nashss.se.concertmemories.dependency.DaggerServiceComponent;
-import com.nashss.se.concertmemories.dependency.ServiceComponent;
+import concertmemories2.dependency.DaggerServiceComponent;
+import concertmemories2.dependency.ServiceComponent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,7 +22,6 @@ public class LambdaActivityRunner<TRequest, TResult> {
         Supplier<TRequest> requestSupplier,
         BiFunction<TRequest, ServiceComponent, TResult> handleRequest) {
 
-       // this.service = null;
         TRequest request;
         try {
             log.info("Attempting to build activity request object...");
@@ -38,8 +37,9 @@ public class LambdaActivityRunner<TRequest, TResult> {
         try {
             log.info("Attempting to execute activity...");
 
-            ServiceComponent serviceComponent = getService();
-            TResult result = handleRequest.apply(request, serviceComponent);
+           service = getService();
+           //service = null;
+            TResult result = handleRequest.apply(request, service);
 
             log.info("Successfully executed activity. Received result of type: {}.", result.getClass().getSimpleName());
             return LambdaResponse.success(result);
@@ -47,6 +47,7 @@ public class LambdaActivityRunner<TRequest, TResult> {
             log.error("ERROR! An exception occurred while executing activity!", e);
             return LambdaResponse.error(e);
         }
+
     }
 
     private ServiceComponent getService() {

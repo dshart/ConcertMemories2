@@ -12,8 +12,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.nashss.se.concertmemories.dynamodb.models.Concert.BAND_INDEX;
-import static com.nashss.se.concertmemories.dynamodb.models.Concert.VENUE_INDEX;
+import static concertmemories2.dynamodb.models.Concert.BAND_INDEX;
+import static concertmemories2.dynamodb.models.Concert.VENUE_INDEX;
 
 /**
  * Accesses data for a concert using {@link Concert} to represent the model in DynamoDB.

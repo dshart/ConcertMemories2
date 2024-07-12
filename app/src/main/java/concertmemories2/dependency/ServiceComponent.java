@@ -1,7 +1,7 @@
 package concertmemories2.dependency;
 
-import com.nashss.se.concertmemories.api.concert.activity.*;
-import com.nashss.se.concertmemories.dynamodb.ConcertDao;
+import concertmemories2.dynamodb.ConcertDao;
+import concertmemories2.api.concert.activity.GetAllConcertsActivity;
 import dagger.Component;
 
 import javax.inject.Singleton;

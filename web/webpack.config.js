@@ -23,10 +23,13 @@ module.exports = {
     usedExports: true
   },
   entry: {
-    createPlaylist: path.resolve(__dirname, 'src', 'pages', 'createPlaylist.js'),
-    viewPlaylist: path.resolve(__dirname, 'src', 'pages', 'viewPlaylist.js'),
-    searchPlaylists: path.resolve(__dirname, 'src', 'pages', 'searchPlaylists.js'),
+    indexPage: path.resolve(__dirname, 'src', 'pages', 'indexPage.js'),
+    getConcert: path.resolve(__dirname, 'src', 'pages', 'getConcert.js'),
+    createConcert: path.resolve(__dirname, 'src', 'pages', 'createConcert.js'),
+    deleteConcert: path.resolve(__dirname, 'src', 'pages', 'deleteConcert.js'),
+    updateConcert: path.resolve(__dirname, 'src', 'pages', 'updateConcert.js'),
   },
+
   output: {
     path: path.resolve(__dirname, 'build', 'assets'),
     filename: '[name].js',

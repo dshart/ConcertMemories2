@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <script type="text/javascript" src="assets/updateConcert.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Concert Memories - Update Concert</title>
+  </head>
+  <body>
+    <header class="header" id="header"></header>
+    <br>
+    <a href="concertsAndBands.html">Concerts And Bands</a>
+    <h3>Update Concert Information</h3>
+
+
+    <div class="center-me">
+        <div id="updateConcertFormId">
+            <br><br>
+            <label for="updateDateInput">Concert Date (Required):</label><br>
+            <input type="date" id="updateDateInput">
+            <button id="submitDateToFillTextBoxesId">Send Date</button><br>
+            <label for="updateBandNameInput">Band Name:</label><br>
+            <input type="text" id="updateBandNameInput" class="disabled"><br><br>
+            <label for="updateTourNameInput">Tour Name:</label><br>
+            <input type="text" id="updateTourNameInput" class="disabled"><br><br>
+            <label for="updateVenueInput">Venue:</label><br>
+            <input type="text" id="updateVenueInput" class="disabled"><br><br>
+            <br><br>
+
+            <div class="container">
+                <div class = "box">
+                    <label for="updateOpeningActsInput">Opening Act(s):</label><br>
+                    <textarea id="updateOpeningActsInput"  class="disabled" rows="10" cols="35" placeholder="Separate entries by commas"></textarea>
+                </div>
+                <div class = "box">
+                    <label for="updateSongsPlayedInput">Songs Played:</label><br>
+                    <textarea id="updateSongsPlayedInput" class="disabled" rows="10" cols="35" placeholder="Separate entries by commas"></textarea>
+                </div>
+                <div class = "box">
+                   <label for="updateMemoriesInput">Memories:</label><br>
+                   <textarea id='updateMemoriesInput' class="disabled"rows="10" cols="35" placeholder="Separate entries by commas"></textarea>
+                </div>
+            </div>
+            <br><br><br><br>
+            <button type="submit" id="updateConcertButtonId">Submit</button>
+        </div>
+    </div>
+
+        <div id="successMessageId" class="hidden">
+            <h3>Success!</h3>
+        </div>
+        <div id="updateFailedMessageId" class="hidden">
+            <h3>No concert with that date.  Try again?</h3>
+        </div>
+     </div>
+  </body>  
+</html>
+

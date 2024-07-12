@@ -3,7 +3,7 @@ package concertmemories2.models;
 import java.util.List;
 import java.util.Objects;
 
-import static com.nashss.se.concertmemories.utils.CollectionUtils.copyToList;
+import static concertmemories2.utils.CollectionUtils.copyToList;
 
 public class ConcertModel {
     private final String emailAddress;

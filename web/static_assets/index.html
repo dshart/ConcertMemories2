@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+      <script type="text/javascript" src="assets/indexPage.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Concert Memories - Home Page</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <p id="index-text">A place to enter and display information about concerts you've attended and the bands you've seen</p>
+    <img src="images/concert2.jpg" alt="Rowdy fans at concert" id="entrypagepic" class="center-photos" width="1024" height="643">
+    <br>
+    <a href="concertsAndBands.html" target="_blank" class="links">
+        <button id="enterSiteButtonId">Enter Site</button>
+    </a>
 
-<head>
-    <script type="text/javascript" src="assets/searchPlaylists.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body class="background">
-    <header class="header" id="header"></header>
-    <div class="card">
-        <h2>Search Playlists</h2>
-        <form class="card-content" id="search-playlists-form">
-            <p class="form-field">
-                <label>Search by name or tag</label>
-                <input type="text" class="validated-field" id="search-criteria" placeholder="smooth-jamz" autofocus>
-                <sub>Search is case-sensitive and tags must match exactly.</sub>
-            </p>
-        </form>
-        <p class="button-group">
-            <a href="#" class="button" id="search-btn">Search</a>
-            <a href="createPlaylist.html" class="button">New Playlist</a>
-        </p>
-    </div>
-    <div class="card hidden" id='search-results-container'>
-        <h3>Results for <span id="search-criteria-display"></span></h3>
-        <div id="search-results-display">
-        </div>
-    </div>
-</body>
-
+  </body>
 </html>
+
