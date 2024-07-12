@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <script type="text/javascript" src="assets/createConcert.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Concert Memories - Enter Concert</title>
+  </head>
+  <body>
+    <header class="header" id="header"></header>
+    <br>
+    <a href="concertsAndBands.html">Concerts And Bands</a>
+    <h3>Enter Concert Information</h3>
+
+
+    <div class="center-me">
+        <div id="concertFormId">
+            <br><br>
+            <label for="concertDateTextBox">Concert Date (Required):</label><br>
+            <input type="date" id="concertDateTextBox"><br><br>
+            <label for="bandName">Band Name:</label><br>
+            <input type="text" id="bandName"><br><br>
+            <label for="tourName">Tour Name:</label><br>
+            <input type="text" id="tourName"><br><br>
+            <label for="venue">Venue:</label><br>
+            <input type="text" id="venue"><br><br>
+            <br><br>
+
+            <div class="container">
+                <div class = "box">
+                    <label for="openingActs">Opening Act(s):</label><br>
+                    <textarea id="openingActs" rows="10" cols="35" placeholder="Separate entries by commas"></textarea>
+                </div>
+                <div class = "box">
+                    <label for="songsPlayed">Songs Played:</label><br>
+                    <textarea id='songsPlayed' rows="10" cols="35" placeholder="Separate entries by commas"></textarea>
+                </div>
+                <div class = "box">
+                   <label for="memories">Memories:</label><br>
+                   <textarea id='memories' rows="10" cols="35" placeholder="Separate entries by commas"></textarea>
+                </div>
+            </div>
+            <br><br><br><br>
+            <button type="submit" id="submitConcertButtonId">Submit</button>
+         </div>
+    </div>
+  </body>  
+</html>

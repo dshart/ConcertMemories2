@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="assets/getConcert.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Concert Memories - Display Concert Views</title>
+    </head>
+    <body>
+        <header class="header" id="header"></header>
+        <br>
+        <a href="concertsAndBands.html">Concerts And Bands</a>
+
+        <div class="center-me">
+            <label for="concertViewOptions">Choose a View:</label>
+            <select name = "concertViewOptions" id="concertViewOptions">
+                <option value="0">Clear Page</option>-->
+                <option value="1">Single Concert By Date</option>
+                <option value="2">All Concerts - Sorted By Date</option>
+                <option value="3">All Concerts - Sorted By Band</option>
+                <option value="4">All Concerts - Sorted By Venue</option>
+                <option value="5">All Concerts By Band</option>
+                <option value="6">All Concerts By Venue</option>
+            </select>
+
+            <div id="submitConcertArea"></div>
+            <br>
+            <div id="concertViewButtonId"></div>
+            <br>
+            <br>
+
+           <div id="searchResultsDisplay"></div>
+            <div id="displayConcertFailedMessageId" class="hidden">
+                <h3>No concert with that date.</h3>
+            </div>
+        </body>
+</html>
+
+
+
+
+

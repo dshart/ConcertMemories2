@@ -1,0 +1,49 @@
+{
+  "Concerts" : [
+    {  
+      "PutRequest" : {
+        "Item" : {
+          "emailAddress" : {"S" : "dshart@gmail.com"},
+          "dateAttended" : {"S": "1988-07-16"},
+          "bandName" : {"S": "Def Leppard"},
+          "tourName" : {"S" : "Hysteria"},
+          "venue" : {"S" : "Alpine Valley - Troy, WI"},
+          "openingActs" : {"L" : [{"S" : "Europe"}]},
+          "songsPlayed" : {"L" : [{"S" : "Rock Rock Til You Drop"}, {"S" : "Armageddon It"}, {"S" : "Promises"}]},
+          "memories" : {"L" : [{"S" : "I remember eating a really good hot dog."}, {"S" : "I remember it smelled like marijuana."},
+            {"S" :  "I remember Def Leppard rocked the house."}]}
+        }
+      }
+    },
+    {
+      "PutRequest" : {
+        "Item" : {
+          "emailAddress" : {"S" : "dshart@gmail.com"},
+          "dateAttended" : {"S" : "1989-08-22"},
+          "bandName" : {"S" : "Duran Duran"},
+          "tourName" : {"S" : "Notrious"},
+          "venue" : {"S" : "World Music Theater - Tinley Park, IL"},
+          "openingActs" : {"L" : [{"S" : "Mad House"}, {"S" : "Thompson Twins"}]},
+          "songsPlayed" : {"L" : [{"S" : "Hungry Like The Wolf"}, {"S": "Rio"}, {"S" : "The Reflex"},
+            {"S" : "Save a Prayer"}, {"S" : "The Chauffer"}]},
+          "memories" : {"L" : [{"S" : "Becky Stekl and Stacy Skeels came with."}, {"S" : "There was construction and traffic was horrendous."}]}
+        }
+      }
+    },
+    {
+      "PutRequest" : {
+ 	"Item" : {
+ 	  "emailAddress" : {"S" : "dshart@gmail.com"},
+	  "dateAttended" : {"S" : "1992-04-05"},
+          "bandName" : {"S" : "Extreme"},
+          "tourName" : {"S" : "Pornografitti"},
+          "venue" : {"S" : "Illinois State University"},
+          "songsPlayed" : {"L" : [{"S" : "More Than Words"}, {"S" : "Decadence Dance"}, {"S" : "Hole-Hearted"}]},
+          "memories" : {"L" : [{"S" : "Nuno had spotted earlier in the day reading the newspaper at a table in the student union."},
+            {"S" :  "Suite-mate Brian was a security guard and said he opened the door into Gary Cherone's head by accident."},
+            {"S" : "Brian also said Gary had a Boa Constrictor around his neck - like a real one."}]}
+        }
+      }
+    }
+  ]
+}
